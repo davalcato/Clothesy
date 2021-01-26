@@ -7,8 +7,11 @@ target 'Clothesy' do
 
   # Pods for Clothesy
   pod 'Firebase/Analytics'
-
-
+  pod 'Firebase/Auth'
+  pod 'Firebase/Functions'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Storage'
+ 
 
 
   target 'ClothesyTests' do

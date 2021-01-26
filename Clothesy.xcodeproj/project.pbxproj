@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,9 @@
 		75B3594425BFD3BD003F2576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75B3594225BFD3BD003F2576 /* LaunchScreen.storyboard */; };
 		75B3594F25BFD3BD003F2576 /* ClothesyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3594E25BFD3BD003F2576 /* ClothesyTests.swift */; };
 		75B3595A25BFD3BD003F2576 /* ClothesyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3595925BFD3BD003F2576 /* ClothesyUITests.swift */; };
+		75B3596825BFDD4E003F2576 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75B3596725BFDD4D003F2576 /* GoogleService-Info.plist */; };
+		75B3596D25BFE69A003F2576 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3596C25BFE69A003F2576 /* ProfileView.swift */; };
+		75B3596F25BFE787003F2576 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3596E25BFE787003F2576 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		75B3595525BFD3BD003F2576 /* ClothesyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClothesyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B3595925BFD3BD003F2576 /* ClothesyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothesyUITests.swift; sourceTree = "<group>"; };
 		75B3595B25BFD3BD003F2576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B3596725BFDD4D003F2576 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		75B3596C25BFE69A003F2576 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		75B3596E25BFE787003F2576 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		956A1D2745D50970BAC5DB8E /* Pods-ClothesyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClothesyTests.debug.xcconfig"; path = "Target Support Files/Pods-ClothesyTests/Pods-ClothesyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A01C4765B286855BBECD842F /* Pods_Clothesy_ClothesyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clothesy_ClothesyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B026F930636CC05FB0124A35 /* Pods-Clothesy-ClothesyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clothesy-ClothesyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Clothesy-ClothesyUITests/Pods-Clothesy-ClothesyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +107,6 @@
 				956A1D2745D50970BAC5DB8E /* Pods-ClothesyTests.debug.xcconfig */,
 				4917943D8159A03500D4DE35 /* Pods-ClothesyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,12 +145,16 @@
 		75B3593625BFD3BB003F2576 /* Clothesy */ = {
 			isa = PBXGroup;
 			children = (
+				75B3596A25BFE65A003F2576 /* Spark */,
+				75B3596925BFE64E003F2576 /* Helpers */,
+				75B3596B25BFE667003F2576 /* Views */,
 				75B3593725BFD3BB003F2576 /* AppDelegate.swift */,
 				75B3593925BFD3BB003F2576 /* SceneDelegate.swift */,
 				75B3593B25BFD3BB003F2576 /* ContentView.swift */,
 				75B3593D25BFD3BD003F2576 /* Assets.xcassets */,
 				75B3594225BFD3BD003F2576 /* LaunchScreen.storyboard */,
 				75B3594525BFD3BD003F2576 /* Info.plist */,
+				75B3596725BFDD4D003F2576 /* GoogleService-Info.plist */,
 				75B3593F25BFD3BD003F2576 /* Preview Content */,
 			);
 			path = Clothesy;
@@ -175,6 +184,29 @@
 				75B3595B25BFD3BD003F2576 /* Info.plist */,
 			);
 			path = ClothesyUITests;
+			sourceTree = "<group>";
+		};
+		75B3596925BFE64E003F2576 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				75B3596E25BFE787003F2576 /* Profile.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		75B3596A25BFE65A003F2576 /* Spark */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Spark;
+			sourceTree = "<group>";
+		};
+		75B3596B25BFE667003F2576 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75B3596C25BFE69A003F2576 /* ProfileView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B3594425BFD3BD003F2576 /* LaunchScreen.storyboard in Resources */,
+				75B3596825BFDD4E003F2576 /* GoogleService-Info.plist in Resources */,
 				75B3594125BFD3BD003F2576 /* Preview Assets.xcassets in Resources */,
 				75B3593E25BFD3BD003F2576 /* Assets.xcassets in Resources */,
 			);
@@ -415,6 +448,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B3596D25BFE69A003F2576 /* ProfileView.swift in Sources */,
+				75B3596F25BFE787003F2576 /* Profile.swift in Sources */,
 				75B3593825BFD3BB003F2576 /* AppDelegate.swift in Sources */,
 				75B3593A25BFD3BB003F2576 /* SceneDelegate.swift in Sources */,
 				75B3593C25BFD3BB003F2576 /* ContentView.swift in Sources */,
