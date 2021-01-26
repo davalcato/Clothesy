@@ -21,6 +21,12 @@
 		75B3596825BFDD4E003F2576 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75B3596725BFDD4D003F2576 /* GoogleService-Info.plist */; };
 		75B3596D25BFE69A003F2576 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3596C25BFE69A003F2576 /* ProfileView.swift */; };
 		75B3596F25BFE787003F2576 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3596E25BFE787003F2576 /* Profile.swift */; };
+		75B3597325BFEBBD003F2576 /* SignInWithAppleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3597225BFEBBD003F2576 /* SignInWithAppleView.swift */; };
+		75B3597C25C00183003F2576 /* EnvironmentWindowKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3597725C00183003F2576 /* EnvironmentWindowKey.swift */; };
+		75B3597D25C00183003F2576 /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3597825C00183003F2576 /* SignInWithAppleButton.swift */; };
+		75B3597E25C00183003F2576 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3597925C00183003F2576 /* AuthState.swift */; };
+		75B3597F25C00183003F2576 /* SignInWithAppleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3597A25C00183003F2576 /* SignInWithAppleManager.swift */; };
+		75B3598025C00183003F2576 /* SignInWithAppleDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3597B25C00183003F2576 /* SignInWithAppleDelegates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,12 @@
 		75B3596725BFDD4D003F2576 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75B3596C25BFE69A003F2576 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		75B3596E25BFE787003F2576 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		75B3597225BFEBBD003F2576 /* SignInWithAppleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleView.swift; sourceTree = "<group>"; };
+		75B3597725C00183003F2576 /* EnvironmentWindowKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentWindowKey.swift; sourceTree = "<group>"; };
+		75B3597825C00183003F2576 /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
+		75B3597925C00183003F2576 /* AuthState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		75B3597A25C00183003F2576 /* SignInWithAppleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithAppleManager.swift; sourceTree = "<group>"; };
+		75B3597B25C00183003F2576 /* SignInWithAppleDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInWithAppleDelegates.swift; sourceTree = "<group>"; };
 		956A1D2745D50970BAC5DB8E /* Pods-ClothesyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClothesyTests.debug.xcconfig"; path = "Target Support Files/Pods-ClothesyTests/Pods-ClothesyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A01C4765B286855BBECD842F /* Pods_Clothesy_ClothesyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clothesy_ClothesyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B026F930636CC05FB0124A35 /* Pods-Clothesy-ClothesyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clothesy-ClothesyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Clothesy-ClothesyUITests/Pods-Clothesy-ClothesyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +157,7 @@
 		75B3593625BFD3BB003F2576 /* Clothesy */ = {
 			isa = PBXGroup;
 			children = (
+				75B3597625C00167003F2576 /* SignInWithAppleSwiftUIHelpers */,
 				75B3596A25BFE65A003F2576 /* Spark */,
 				75B3596925BFE64E003F2576 /* Helpers */,
 				75B3596B25BFE667003F2576 /* Views */,
@@ -190,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				75B3596E25BFE787003F2576 /* Profile.swift */,
+				75B3597225BFEBBD003F2576 /* SignInWithAppleView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -207,6 +221,18 @@
 				75B3596C25BFE69A003F2576 /* ProfileView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		75B3597625C00167003F2576 /* SignInWithAppleSwiftUIHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				75B3597925C00183003F2576 /* AuthState.swift */,
+				75B3597725C00183003F2576 /* EnvironmentWindowKey.swift */,
+				75B3597825C00183003F2576 /* SignInWithAppleButton.swift */,
+				75B3597B25C00183003F2576 /* SignInWithAppleDelegates.swift */,
+				75B3597A25C00183003F2576 /* SignInWithAppleManager.swift */,
+			);
+			path = SignInWithAppleSwiftUIHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,11 +474,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B3597F25C00183003F2576 /* SignInWithAppleManager.swift in Sources */,
+				75B3597D25C00183003F2576 /* SignInWithAppleButton.swift in Sources */,
+				75B3597E25C00183003F2576 /* AuthState.swift in Sources */,
 				75B3596D25BFE69A003F2576 /* ProfileView.swift in Sources */,
 				75B3596F25BFE787003F2576 /* Profile.swift in Sources */,
 				75B3593825BFD3BB003F2576 /* AppDelegate.swift in Sources */,
 				75B3593A25BFD3BB003F2576 /* SceneDelegate.swift in Sources */,
+				75B3597C25C00183003F2576 /* EnvironmentWindowKey.swift in Sources */,
+				75B3598025C00183003F2576 /* SignInWithAppleDelegates.swift in Sources */,
 				75B3593C25BFD3BB003F2576 /* ContentView.swift in Sources */,
+				75B3597325BFEBBD003F2576 /* SignInWithAppleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

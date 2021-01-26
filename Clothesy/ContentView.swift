@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var signInWithAppleManager: SignInWithAppleManager
+    
     var body: some View {
-        Text("Hello, world!").padding()
+        if signInWithAppleManager.isUserAuthenticated == .undefined {
+            return LaunchScreenView()
+            
+        } else if signInWithAppleManager.isUserAuthenticated == .signedOut {
+            
+            return LoginView()
+        }
     }
 }
 
