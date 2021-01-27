@@ -10,6 +10,7 @@
 		0E3301C9FA39F63557E9C290 /* Pods_ClothesyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539AF5FF47583263E37C0C79 /* Pods_ClothesyTests.framework */; };
 		23A665EBFD14B41CA611B70F /* Pods_Clothesy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0BB406F799307E7EADACCA8 /* Pods_Clothesy.framework */; };
 		683D22B9BFBB8ACA58B5787B /* Pods_Clothesy_ClothesyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01C4765B286855BBECD842F /* Pods_Clothesy_ClothesyUITests.framework */; };
+		751FF4EF25C119D300310BB9 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FF4EE25C119D300310BB9 /* LaunchScreenView.swift */; };
 		75B3593825BFD3BB003F2576 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3593725BFD3BB003F2576 /* AppDelegate.swift */; };
 		75B3593A25BFD3BB003F2576 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3593925BFD3BB003F2576 /* SceneDelegate.swift */; };
 		75B3593C25BFD3BB003F2576 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B3593B25BFD3BB003F2576 /* ContentView.swift */; };
@@ -52,6 +53,7 @@
 		4917943D8159A03500D4DE35 /* Pods-ClothesyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClothesyTests.release.xcconfig"; path = "Target Support Files/Pods-ClothesyTests/Pods-ClothesyTests.release.xcconfig"; sourceTree = "<group>"; };
 		539AF5FF47583263E37C0C79 /* Pods_ClothesyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClothesyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3333A5D691F71AAFC55B8B /* Pods-Clothesy-ClothesyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clothesy-ClothesyUITests.release.xcconfig"; path = "Target Support Files/Pods-Clothesy-ClothesyUITests/Pods-Clothesy-ClothesyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		751FF4EE25C119D300310BB9 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
 		75B3593425BFD3BB003F2576 /* Clothesy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clothesy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B3593725BFD3BB003F2576 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75B3593925BFD3BB003F2576 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				75B3596C25BFE69A003F2576 /* ProfileView.swift */,
+				751FF4EE25C119D300310BB9 /* LaunchScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				75B3598025C00183003F2576 /* SignInWithAppleDelegates.swift in Sources */,
 				75B3593C25BFD3BB003F2576 /* ContentView.swift in Sources */,
 				75B3597325BFEBBD003F2576 /* SignInWithAppleView.swift in Sources */,
+				751FF4EF25C119D300310BB9 /* LaunchScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
