@@ -13,7 +13,11 @@ struct LaunchScreenView: View {
     
     @EnvironmentObject var signInWithAppleManager: SignInWithAppleManager
     
-    @State private var signInWithappleDelegates: SignInWithAppleDelegates! = nil
+    // Grabbing the window of the project here
+    @Environment(\.window) var window: UIWindow?
+    
+    @State private var signInWithAppleDelegates: SignInWithAppleDelegates! = nil
+
     
     @State private var isAlertPresented = false
     @State private var errDescription = ""
@@ -40,6 +44,8 @@ struct LaunchScreenView: View {
                   Text(errDescription), dismissButton:
                     .default(Text("Ok"), action: {
                         // set isUserAuthenticated to signed out
+                        self.signInWithAppleManager.isUserAuthenticated = .signedOut
+                       
             }))
         }
     }
@@ -50,7 +56,18 @@ struct LaunchScreenView: View {
     
     private func performSignIn(using request: [ASAuthorizationRequest]) {
         
-        signInWithappleDelegates = SignInWithAppleDelegates
+        signInWithAppleDelegates = SignInWithAppleDelegates(window: window, onSignedIn: { (result) in
+            switch result {
+            case .success(let userId):
+                UserDefaults.standard.setValue(userId, forKey: signInWithAppleManager.userIdentifierKey)
+                
+                self.signInWithAppleManager.isUserAuthenticated = .signedIn
+            case .failure(let err):
+                self.errDescription = err.localizedDescription
+                self.isAlertPresented = true
+                
+            }
+        })
         
         let controller = ASAuthorizationController(authorizationRequests: requests)
         controller.delegate = SignInWithAppleDelegates
